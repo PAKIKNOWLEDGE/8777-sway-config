@@ -38,6 +38,25 @@ This repository contains the core UI configuration files for my **Sway** environ
 * **Other Files**: The Sway configuration and custom scripts are provided as-is for personal use.
 
 ---
+## 📦 Dependencies
+
+To ensure all features and keybindings work as expected, the following packages must be installed:
+
+* **Core**: `sway`, `waybar`, `kitty` (default terminal), `fuzzel` (application launcher).
+* **System Utilities**:
+    * `fcitx5`: Input method framework.
+    * `mako`: Lightweight notification daemon.
+    * `waypaper`: GUI wallpaper setter used with isolated config.
+    * `swayosd`: OSD daemon for volume, brightness, and caps-lock alerts.
+* **Multimedia & Hardware**:
+    * `pactl` (from `pulseaudio` or `pipewire-pulse`): Audio control.
+    * `brightnessctl`: Screen brightness management.
+    * `networkmanager`: Specifically `nmtui` for terminal-based WiFi management.
+* **Clipboard & Screenshots**:
+    * `cliphist` & `wl-clipboard`: Clipboard history management.
+    * `grim` & `slurp`: Area-selection screenshot tools.
+* **Idle Management**:
+    * `swayidle` & `swaylock`: Screen locking and power management.
 
 ### 💡 A Note on the GPL-3.0 Credit
 Since **Ruixi-rebirth** uses GPL-3.0, you are legally required to keep the same license for the *Waybar* part of your project if you distribute it. I've added a specific "License Notice" in the README to make sure you are covered. Using **LazyGit** to push this README will make your repo look very professional!
