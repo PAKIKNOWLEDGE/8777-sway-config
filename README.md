@@ -1,5 +1,3 @@
----
-
 # 8777-sway-config
 
 This repository contains the core UI configuration files for my **Sway** environment on EndeavourOS (ThinkPad T430). [cite_start]It features a clean, productive setup with environment isolation for easy maintenance[cite: 6].
