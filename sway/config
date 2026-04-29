@@ -26,6 +26,8 @@ exec mako
 # 剪切板服务
 exec wl-paste --type text --watch cliphist store
 exec wl-paste --type image --watch cliphist store
+# 大小写等osd
+exec_always swayosd-server
 
 ### Input configuration
 input "type:touchpad" {
