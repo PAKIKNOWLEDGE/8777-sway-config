@@ -1,0 +1,33 @@
+* {
+    /* 依然使用更纱黑体处理文字，Emoji 会自动由系统 Noto Emoji 接管 */
+    font-family: "Sarasa UI SC Nerd Font", "Noto Color Emoji";
+    font-size: 11pt;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    color: #c0caf5;
+    background-color: #24283b;
+    border-bottom: 1px solid #414868;
+}
+
+#workspaces button {
+    background: #24283b;
+    color: #7aa2f7;
+    padding: 0 8px;
+}
+
+#workspaces button.focused {
+    color: #ffffff;
+    background: #414868;
+    border-bottom: 2px solid #7aa2f7;
+}
+
+#clock, #cpu, #memory, #temperature, #backlight, #pulseaudio, #network, #battery {
+    padding: 0 10px;
+}
+
+#tray {
+    margin-left: 10px;
+}
