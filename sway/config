@@ -6,10 +6,9 @@ set $up k
 set $right l
 set $term kitty
 set $menu fuzzel
-
 ### Output configuration
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-
+# output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+# 这个逻辑弃用了
 ### Idle configuration
 exec swayidle -w \
     timeout 600 'swaylock -f -c 000000' \
