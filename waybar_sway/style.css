@@ -1,5 +1,4 @@
 * {
-    /* 依然使用更纱黑体处理文字，Emoji 会自动由系统 Noto Emoji 接管 */
     font-family: "Sarasa UI SC Nerd Font", "Noto Color Emoji";
     font-size: 11pt;
     border: none;
@@ -25,7 +24,7 @@ window#waybar {
 }
 
 #clock, #cpu, #memory, #temperature, #backlight, #pulseaudio, #network, #battery {
-    padding: 0 10px;
+    padding: 0 12px;
 }
 
 #tray {

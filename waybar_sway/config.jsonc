@@ -2,7 +2,6 @@
     "layer": "top",
     "position": "top",
     "height": 30,
-    // 在右侧模块中加入了 custom/clipboard
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
     "modules-right": ["network", "cpu", "memory", "temperature", "backlight", "pulseaudio", "battery", "custom/clipboard", "tray"],
@@ -13,45 +12,43 @@
         "format": "{name}"
     },
     "clock": {
-        "format": "⏰ {:%H:%M}",
+        "format": "󱑒 {:%H:%M}", 
         "tooltip-format": "<tt>{calendar}</tt>"
     },
     "cpu": {
-        "format": "💻 {usage}%",
+        "format": " {usage}%", 
         "interval": 2
     },
     "memory": {
-        "format": "💾 {used}G",
+        "format": " {used}G", 
         "interval": 2
     },
     "temperature": {
         "critical-threshold": 80,
-        "format": "🔥 {temperatureC}°C"
+        "format": " {temperatureC}°C" 
     },
     "backlight": {
-        "format": "💡 {percent}%"
+        "format": "󰃠 {percent}%" 
     },
     "pulseaudio": {
-        "format": "🔊 {volume}%",
-        "format-muted": "🔇",
+        "format": "󰕾 {volume}%", 
+        "format-muted": "󰝟",     
         "on-click": "pavucontrol"
     },
     "network": {
-        "format-wifi": "📶",
-        "format-ethernet": "🌐",
-        "format-disconnected": "❌",
+        "format-wifi": " ",    
+        "format-ethernet": "󰈀 ", 
+        "format-disconnected": "󰖪 ", 
         "tooltip-format": "{essid}",
-        //点击弹出终端 WiFi 管理器 (kitty + nmtui)
         "on-click": "kitty --class 'waybar_wifi' -e nmtui"
     },
     "battery": {
         "states": { "critical": 15 },
         "format": "{icon} {capacity}%",
-        "format-icons": ["🪫", "🔋"]
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"] // 替换🪫🔋为动态档位
     },
-    //剪切板历史模块
     "custom/clipboard": {
-        "format": "📋",
+        "format": "󰅍", 
         "on-click": "sleep 0.1 && cliphist list | fuzzel -d | cliphist decode | wl-copy",
         "tooltip": false
     },
