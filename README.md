@@ -40,6 +40,8 @@ This repository contains the core UI configuration files for my **Sway** environ
 ---
 ## 📦 Dependencies
 
+please install Sarasa UI SC Nerd Font from AUR.
+
 To ensure all features and keybindings work as expected, the following packages must be installed:
 
 * **Core**: `sway`, `waybar`, `kitty` (default terminal), `fuzzel` (application launcher).
